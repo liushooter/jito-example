@@ -1,0 +1,29 @@
+{
+  "name": "jito-send-example",
+  "version": "0.1.0",
+  "description": "Minimal TypeScript example to send Solana transactions to a Jito endpoint using the x-jito-auth header",
+  "author": "liushooter",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "ts-node -r dotenv/config src/send-with-x-jito-auth.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/send-with-x-jito-auth.js",
+    "lint": "eslint \"src/**/*.{ts,js}\" --fix",
+    "format": "prettier --write \"{src,tests}/**/*.{ts,js,json,md}\""
+  },
+  "dependencies": {
+    "@solana/web3.js": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "undici": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
+  }
+}
